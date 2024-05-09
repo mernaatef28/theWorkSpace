@@ -6,7 +6,11 @@ box-sizing: border-box;
 font-family:'poppins', sans-serif;
 }
 body{
-  background-color: #F4EFEB;;  
+  background-color: #F4EFEB;
+
+}
+html {
+    scroll-behavior: smooth;
 }
 header{
     top: 0%;
@@ -23,7 +27,7 @@ header{
 }
 header img{
 width: auto;
-height: 150px;
+height: 130px;
 flex-shrink: 100;
 box-sizing: border-box ;
 margin-top: 0%;
@@ -38,7 +42,7 @@ header ul{
 }
 header ul li{
     list-style: none;
-    margin-left: 20px;
+    
 
 }
 header ul li a {
