@@ -7,7 +7,6 @@ font-family:'poppins', sans-serif;
 }
 body{
   background-color: #F4EFEB;
-
 }
 html {
     scroll-behavior: smooth;
@@ -95,6 +94,7 @@ footer{
     position:static;
     bottom: 0%;
     width: 100%;
+    
 
 }
 .footercontainer{
