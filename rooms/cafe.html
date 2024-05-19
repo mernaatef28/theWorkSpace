@@ -4,7 +4,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="Library, Virtual, Ambience, Music, Study, Relax, Background Noise">
 		<meta name="author" content="Ellie Xing">
-		<title>libraryRoom</title>
+		<title>the-café</title>
+		<link rel="icon" type="image/x-icon" href="/images/Cafe.png">
 		<link rel="icon" type="image/PNG" href="assets/favicon.PNG"/>
 		<link rel="stylesheet" href="../css/stylelib.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -22,13 +23,13 @@
 	<body>	
         <section class="header">
 			<button id="modalButton" class="nav-links">about</button>
-
+			<a href="../index.html"><button  class="nav-links">Home</button></a>
 			<div>
 				<div id="myModal" class="modal">
 				  <div class="modal-content">
 				    <span class="close">&times;</span>
 				    <center><h2>about</h2></center><br>
-				    <p>The library is many students' second home, and whether you were there to read, study, or nap (?), the library was there to welcome you. Although the atmosphere of a real library cannot be replaced, I hope this page can keep you company at home as we wait for the pandemic to finally come to an end, and we can meet again safely. Until then, pick up a book and sit awhile. <br><br>IMissMyLibrary includes a to-do list and library sound effects to help you stay comfortable and productive. You can adjust the volume of the sounds to your liking. Chrome is recommended for the best experience. <br><br> Inspired by <a href="https://imissmycafe.com/" target="_blank">IMissMyCafe</a>, <a href="http://imissmybar.com/" target="_blank">IMissMyBar</a>, and <a href="https://imisstheoffice.eu/" target="_blank">IMissMyOffice</a>. Sound effects obtained from <a href="https://www.zapsplat.com" target="_blank">ZapSplat</a>. Code by <a href="https://www.linkedin.com/in/elliexing/" target="_blank">Ellie Xing</a> and illustration by Sophie Wang. No copyright infringement intended.</p>
+				    <p> <h4 style="font-weight: bold; margin-left: 0%;">The Café</h4>The Café is a cozy retreat for those who find comfort in the aroma of freshly brewed coffee and the gentle clink of cups. Let the ambient sounds of a bustling cafe soothe your mind and enhance your focus, making every task a pleasure. made by <span style="font-weight: bold;">Merna Atef</span></p>
 				  </div>
 
 				</div>
@@ -37,13 +38,12 @@
 		<section class="content">
 			<div class="left">
 				<div class="text-box">
-					<h1>The Cafe</h1>
+					<h1>The Café</h1>
 					<p>Coffee Coffee Coffee!.</p>
 				</div>
 
 				<div class="container">
-
-				</div>
+					<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4IU23M7kCSe2PG3m42rgOj?utm_source=generator" width="60%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lead"></iframe>				</div>
 
 				<script type="text/javascript">
 					$(".txtb").on("keyup",function(e){
@@ -86,11 +86,11 @@
 				</div>
 				<div class="audio unpressed">
 					<span>
-						<p> Rainy Weather &nbsp;</p>
+						<p> coffee machine &nbsp;</p>
 						<button id="play-0" onclick="playSound(0)"></button>
 					</span>
 					<audio loop id="0">
-						<source src="../music/libirary/Rain.mp3" type="audio/mpeg">
+						<source src="../music/cafe/machines.mp3" type="audio/mpeg">
 						<p> Your browser doesn't support HTML 5 sounds.</p>
 					</audio>
 					<span>
@@ -102,9 +102,9 @@
 				<div class="audio unpressed">
 					<span>
 						<p> Sunny Weather &nbsp;</p>
-						<button id="play-5" onclick="playSound(5)"></button>
+						<button id="play-3" onclick="playSound(3)"></button>
 					</span>
-					<audio loop id="5">
+					<audio loop id="3">
 						<source src="../music/libirary/Sunny.mp3" type="audio/mpeg">
 						<p> Your browser doesn't support HTML 5 sounds.</p>
 					</audio>
@@ -116,11 +116,11 @@
 
 				<div class="audio unpressed">
 					<span>
-						<p> Turning Pages &nbsp;</p>
+						<p> other Customers &nbsp;</p>
 						<button id="play-1" onclick="playSound(1)"></button>
 					</span>
 					<audio loop id="1">
-						<source src="../music/libirary/pagesturn.mp3" type="audio/mpeg">
+						<source src="../music/cafe/Customer.mp3" type="audio/mpeg">
 						<p> Your browser doesn't support HTML 5 sounds.</p>
 					</audio>
 					<span>
@@ -131,12 +131,14 @@
 				
 				<div class="audio unpressed">
 					<span>
-						<p> Writing On iPad &nbsp;</p>
+						<p> barista &nbsp;</p>
 						<button id="play-2" onclick="playSound(2)"></button>
 					</span>
 					<audio loop id="2">
-						<source src="../music/libirary/ipad.mp3" type="audio/mpeg">
+						<source src="../music/cafe/barista.mp3" type="audio/mpeg">
+						
 						<p> Your browser doesn't support HTML 5 sounds.</p>
+						
 					</audio>
 					<span>
 						<div class="volume-control" id="vol"></div>
@@ -144,28 +146,15 @@
 					</span>
 				</div>
 
-				<div class="audio unpressed">
-					<span>
-						<p> Fireplace Crackling &nbsp;</p>
-						<button id="play-3" onclick="playSound(3)"></button>
-					</span>
-					<audio loop id="3">
-						<source src="../music/libirary/Fire.mp3" type="audio/mpeg">
-						<p> Your browser doesn't support HTML 5 sounds.</p>
-					</audio>
-					<span>
-						<div class="volume-control" id="vol"></div>
-						<input type="range" onchange="changeVolume(3, this.value)" min="0" max="1" step="0.025" value="0.70" class="vol-control">
-					</span>
-				</div>
+
 
 				<div class="audio unpressed">
 					<span>
-						<p> Typing on Keyboard &nbsp;</p>
+						<p> coffee pouring &nbsp;</p>
 						<button id="play-4" onclick="playSound(4)"></button>
 					</span>
 					<audio loop id="4">
-						<source src="../music/libirary/keyboard.mp3" type="audio/mpeg">
+						<source src="../music/cafe/CoffeePouring.mp3" type="audio/mpeg">
 						<p> Your browser doesn't support HTML 5 sounds.</p>
 					</audio>
 					<span>
@@ -174,9 +163,35 @@
 					</span>
 				</div>
 
+				<div class="audio unpressed">
+					<span>
+						<p> coffee preparing &nbsp;</p>
+						<button id="play-5" onclick="playSound(5)"></button>
+					</span>
+					<audio loop id="5">
+						<source src="../music/cafe/Coffee prep.mp3" type="audio/mpeg">
+						<p> Your browser doesn't support HTML 5 sounds.</p>
+					</audio>
+					<span>
+						<div class="volume-control" id="vol"></div>
+						<input type="range" onchange="changeVolume(4, this.value)"min="0" max="1" step="0.025" value="0.70" class="vol-control">
+					</span>
+				</div>
 			</div>
 		</section>
-
+		<script>
+			function changeVolume(spotifyIframeId, volume) {
+				const spotifyIframe = document.getElementById(spotifyIframeId);
+				spotifyIframe.contentWindow.postMessage(
+					JSON.stringify({
+						event: 'command',
+						func: 'setVolume',
+						args: [volume]
+					}),
+					'https://open.spotify.com'
+				);
+			}
+			</script>
 		<script src="../js/script.js"></script>
 	</body>
 </html>
