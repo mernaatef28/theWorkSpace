@@ -1,0 +1,5 @@
+# .gitignore
+auth.js
+.env
+credentials/
+*.key
