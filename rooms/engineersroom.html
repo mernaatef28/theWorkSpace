@@ -44,7 +44,23 @@
 
 				<div class="container">
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZyonhntyFxW?utm_source=generator&theme=0" width="60%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lead"></iframe>				</div>
-
+					<script src="https://sdk.scdn.co/spotify-player.js"></script>
+					<script>
+					  const token =  'BQBnWdCZ66bu-JR6ALmuqxmYjjKNgwE8CZ4duWnFESlRh8jD86CZkSb0kOLL7kur_FTWx4fU6plrBhdwtNHet7Qpbd7tGTLrBWWmKuG6gG0ubSq0TYUA9BCk46v9XAKJeEHW4tib6ycj834Dgb32z5RHzGSU3pcC4rMGG5al2zbM_gPrUmWDAu6USG76cMvsQWAU0dCqSdzDN1LoeqjKcgl2cDyrLu_flNTYsMZcOF61oLsEIqyglVKHqAGs66bESffEP1bqTlUvwcHdOI5b9gWenqW5OF7MqKO0TqKCNZsYoOl4-vVP';
+					  // Obtain via OAuth flow
+					  const player = new Spotify.Player({
+						name: 'Web Playback SDK',
+						getOAuthToken: cb => { cb(token); }
+					  });
+					
+					  player.connect().then(success => {
+						if (success) {
+						  player.play({
+							context_uri: 'spotify:playlist:13RFNiPGcQbX0ZtIuQJEJE'
+						  });
+						}
+					  });
+					</script>
 				<script type="text/javascript">
 					$(".txtb").on("keyup",function(e){
 						if(e.keyCode==13 && $(".txtb").val() != "") {
